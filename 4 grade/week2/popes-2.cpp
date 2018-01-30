@@ -35,7 +35,6 @@ int main(){
 		}
 //		cout<<"max "<<max<<endl;
 //		cout<<"int "<<lowInt<<" "<<uppInt<<endl<<endl;
-		
 	}
 	cout<<max<<" "<<lowBound<<" "<<uppBound;
 }
