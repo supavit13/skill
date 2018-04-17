@@ -1,0 +1,115 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	int n,b;
+	cin>>n>>b;
+	if(n==1)
+	{
+		int one=0 ;
+		while(1)
+		{
+			cout<<one<<endl;
+			one++;
+			if(one==b)
+				break;
+		}
+	}
+	if(n==2)
+	{
+		int one=0,two=0;
+		while(1)
+		{
+			cout<<two<<one<<endl;
+			one++;
+			if(one==b)
+			{
+				two++;	
+				if(one==b&&two==b)
+					break;
+				one=0;
+			}			
+		}
+	}
+	if(n==3)
+	{
+		int one=0,two=0,three=0;
+		while(1)
+		{
+			cout<<three<<two<<one<<endl;
+			one++;	
+			if(one==b)
+			{
+				two++;		
+				one=0;
+				if(two==b)
+				{
+					three++;
+					if(one==0&&two==b&&three==b)
+						break;
+					two=0;
+				}
+			}
+		}	
+	}
+	if(n==4)
+	{
+		int one=0,two=0,three=0,four=0;
+		while(1)
+		{
+			cout<<four<<three<<two<<one<<endl;
+			one++;
+			if(one==b)
+			{
+				two++;	
+				one=0;
+				if(two==b)
+				{
+					three++;
+					two=0;
+					if(three==b)
+					{
+						four++;
+						if(one==0&&two==0&&three==b&&four==b)
+						break;
+						three=0;
+					}
+				}
+			}
+		}	
+	}
+	if(n==5)
+	{
+		int one=0,two=0,three=0,four=0,five=0;
+		while(1)
+		{
+			cout<<five<<four<<three<<two<<one<<endl;
+			one++;
+			if(one==b)
+			{
+				two++;	
+				one=0;
+				if(two==b)
+				{
+					three++;
+					two=0;
+					if(three==b)
+					{
+						four++;
+						three=0;
+						if(four==b)
+						{
+							five++;
+							if(one==0&&two==0&&three==0&&four==b&&five==b)
+								break;
+							four=0;
+						}	
+					}
+				}
+			}
+		}	
+	}
+}

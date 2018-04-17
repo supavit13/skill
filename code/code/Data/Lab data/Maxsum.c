@@ -1,0 +1,66 @@
+//  O(n)
+#include<stdio.h>
+main()
+{
+   int ch=0,ch2=0,a[10],s3=0,s,s2=0,i=0,sum;
+   printf("Input :");
+  for(i=0;i<10;i++)
+     {
+       scanf("%d",&a[i]);
+     }
+   for(i=0;i<10;i++)
+   {
+     if(a[i]<0)
+      {
+       ch++;
+      }
+   }
+   if(ch==10)
+    {
+       s=a[0];
+        for(i=0;i<10;i++)
+          {
+             if(s<a[i])
+                 s=a[i];
+          }
+      printf("%d",s);
+    }
+  //===============================================
+   else
+	    {
+    s=0;
+    sum=0;
+    ch2=0;
+     for(i=0;i<10;i++)
+        {
+             s2=s2+a[i];
+            if(s2>0)
+              {
+                   s=s+s2;
+				         s2=0;
+              }
+              if(ch2<10&&i==9)
+                 {
+                      if(s>s3)
+                      {
+                          s3=s;
+                          s2=0;
+						  s=0;
+                           ch2++;
+						   i=ch2-1;
+                      }
+					    else
+                      {
+                          s2=0;
+						  s=0;
+                            ch2++;
+							i=ch2-1;
+                      }
+                 }
+        }
+   printf("%d",s3);
+
+    }
+system("pause");
+   }
+

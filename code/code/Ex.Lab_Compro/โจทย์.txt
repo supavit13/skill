@@ -1,0 +1,217 @@
+1) รับค่า ตัวเลข 10 ตัว ปริ้นเลขคู่ เลขคี่
+Input : 1 2 3 4 5 6 7 8 9 10
+output :
+Even number : 2 4 6 8 10
+Old number : 1 3 5 7 9
+
+2) รับค่าตัวเลข 10 ตัว ปริ้นเฉพาะที่เป็นจำนวนเฉพาะ
+Input : 1 2 3 4 5 6 7 8 9 10
+output :
+Prime number : 2 3 5 7
+
+3) รับค่าตัวเลข 10 ตัว ปริ้น ค่า max , min,sum,avg(ค่าเฉลี่ย)
+Input : 1 2 3 4 5 6 7 8 9 10
+Output :
+Max = 10
+Min = 1
+sum = 55
+avg = 5.5
+
+4) รับค่าตัวเลข 10 ตัว ปริ้น min to max , max to min
+Input : 5 1 3 4 9 6 7 8 2 0
+Output :
+min to max : 0 1 2 3 4 5 6 7 8 9
+max to min : 9 8 7 6 5 4 3 2 1 0
+
+5) รับค่า Matrix A ขนาด 2 x3 ทำการ Transpose Matrix
+Input Matrix A :
+1 2 3
+4 5 6
+Output :
+Transpose A :
+1 4
+2 5
+3 6
+
+6) เขียนโปรแกรมเพื่อทำการบวกเมตริกซ์ A(2x2) และเมตริกซ์ B(2x2) และแสดงผลลัพธ์ในเมตริกซ์ C(2x2)
+Input Matrix A : 
+1 1
+1 1
+Input Matrix B : 
+2 2
+2 2
+Matrix C : 
+3 3
+3 3
+
+7) .เขียนโปรแกรมเพื่อทำการคูณเมตริกซ์ A (2x3) และเมตริกซ์ B(3x2) และแสดงผลลัพธ์ในเมตริกซ์ C(2x2) 
+Input Matrix A : 
+1 2 3
+4 5 6
+Input Matrix B : 
+2 3
+2 3
+2 3
+Matrix C : 
+12 18
+30 45 
+ 
+8) เขียนโปรแกรมเพื่อนับความยาวของสตริง โดยให้รับสตริงไม่เกิน 50 ตัวอักษร ห้ามใช้ ฟังก์ชั่น strlen
+input : How are you
+length : 11
+
+9) เขียนโปรแกรมเพื่อทำการต่อสตริงสองสตริงเข้าด้วยกัน โดยแต่ละสตริงไม่เกิน 50 ตัวอักษรห้ามใช้ ฟังก์ชั่น strcat 
+input string1 : Hello
+input string2 : World
+Result = HelloWorld 
+
+10) เขียนโปรแกรมเพื่อนับจำนวนคำในประโยคหนึ่งๆ โดยประโยคนี้มีตัวอักษรไม่เกิน 100 ตัวอักษร
+input : How are you
+word : 3
+
+11) เขียนโปรแกรมเพื่อทำการสลับตัวอักษรระหว่างสองข้อความ โดยแต่ละข้อความไม่เกิน 100 ตัวอักษร ข้อความผลลัพธ์มีขนาดไม่เกิน 200 ตัวอักษร
+โดยการสลับจะสิ้นสุดเมื่อข้อความใด ข้อความหนึ่งนั้นสิ้นสุด
+input string1 : Hello World!!!
+input string2 : I love you
+Result : HIe llloov eW oyrolu 
+
+12) เขียนโปรแกรมเพื่อทำการรับข้อความมาหนึ่งข้อความไม่เกิน 50 ตัวอักษร จากนั้นให้นับว่า สระ a,e,i,o,u มีกี่ตัว มีตัวอย่างโปรแกรมดังนี้
+input : Computer engineering
+a = 0 , e = 4 , i = 2 , o = 1 , u = 1
+
+13) เขียนโปรแกรมเพื่อแสดงข้อความจากหลังไปด้านหน้า ข้อความมไม่เกิน 50 ตัวอักษร 
+input : Computer engineering
+reverse : gnireenigne retupmoC
+
+14) เขียนโปรแกรมเพื่อเรียงคำจากด้านหลังไปด้านหน้าดังตัวอย่างต่อไปนี้
+input : How are you
+reverse word : you are How
+
+15) เขียนโปรแกรมกำหนดให้สร้าง structure เก็บคะแนน ของ
+นิสิต ซึ่งมีมีนิสิตทั้งหมด 5 คน โดยเก็บชื่อ  midterm (30) คะแนน final  (30) 
+แล้ว ปริ้น Mean midterm , Mean fanal , top midterm , top final
+
+Input :
+1) name : aa
+    minterm : 15
+    final : 15
+2) name : bb
+    minterm : 16
+    final : 16
+3) name : cc
+    minterm : 17
+    final : 17
+4) name : dd
+    minterm : 18
+    final : 18
+5) name : ee
+    minterm : 19
+    final : 19
+
+Output :
+
+Midterm :
+mean = 17
+Top 's name = ee
+score = 19
+
+Final :
+mean = 17
+Top 's name = ee
+score = 19
+
+
+16) ให้ทำการสร้าง menu ดังตัวอย่างด้านล่าง 
+************************************************ 
+Menu 
+************************************************ 
+1.Draw triangle 
+2.Draw square 
+3.Exit 
+************************************************ 
+Please Choose > 
+
+ในกรณีที่เลือกข้อ 1. โปรแกรมจะวาดรูปสามเหลี่ยมมุมฉากที่มีด้านประกอบมุมฉากยาวเท่ากัน 
+โดยรับค่า input เป็นค่าความสูงของสามเหลี่ยม แต่มีข้อกำหนดว่าสามเหลี่ยมนี้จะมี ความสูงไม่เกิน 15 หน่วย 
+โดยส่วนของการวาดรูปสามเหลี่ยมให้แยกเขียนเป็น function ชื่อ triangle 
+height : 6 
+The drawing picture is : 
+* 
+** 
+*** 
+**** 
+***** 
+****** 
+ในกรณีที่เลือกข้อ 2 ส่วนของการวาดรูปสี่เหลี่ยมให้แยกเขียนเป็น function ชื่อ square 
+Width : 5 
+Height : 6 
+The drawing picture is : 
+***** 
+***** 
+***** 
+***** 
+***** 
+***** 
+เมื่อโปรแกรมทำการวาดรูปเสร็จแล้ว ให้วนกลับมาที่ menu เพื่อให้ผู้ใช้งานเลือกทำการวาดรูปสามเหลี่ยมหรือสี่เหลี่ยมจาก menu ไปเรื่อยๆ 
+โปรแกรมจะจบการทำงานเมื่อผู้ใช้งานจะเลือกหัวข้อที่ 3 คือ Exit เท่านั้น 
+
+17) จงเขียนฟังก์ชั่น recursive เพื่อหาลำดับของ fibonacci o โดยกำหนด base case ให้ดังนี้
+fib(0) = 1
+fib(1) = 1  
+และกำหนด recursion ดังนี้ 
+fib(n)=fib(n-1)+fib(n-2) 
+
+โดย 0<= n <=20 ถ้าเกินให้วนรับใหม่ 
+
+N : 0
+fibonacci (0) : 1
+
+N : 1 
+fibonacci (1) : 1 
+
+N : 2 
+fibonacci (2) : 2 
+
+N : 6
+fibonacci (6) : 13 
+
+N: 21
+N: 3 
+fibonacci (3) : 3
+
+17) จงเขียนฟังก์ชั่น recursive เพื่อหาค่า factorial  เช่น
+
+Input : 1
+output :
+fac (1) = 1
+
+Input : 2
+output :
+fac (2) = 2
+
+Input : 3
+output :
+fac (3) = 6
+
+Input : 4
+output :
+fac (4) = 24
+
+
+18) จงเขียนฟังก์ชั่น recursive เพื่อหาค่า เลขยกกำลัง 
+โดย input ตัวเลข 2 ค่า โดย ตัวแรก เป็น ฐาน ตัวที่สองเป็นเลขชี้กำลัง
+
+
+Number base  : 2
+Exponent : 3
+Answer = 8
+
+Number base  : 3
+Exponent : 2
+Answer = 9
+
+Number base  : 2
+Exponent : 4
+Answer = 16
+
+?>>>>>>>>>>>>>>>>>>>>>>>>>>> Good Luck !!   ^^ <<<<<<<<<<<<<

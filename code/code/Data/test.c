@@ -1,0 +1,117 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct rec
+{
+int value;
+struct rec *next; 
+};
+struct rec *create()
+{
+struct rec *s;
+s=(struct rec*)malloc(sizeof(struct rec));
+s->next = NULL;
+return s;
+}
+struct rec *push(struct rec *s,int str)
+{ struct rec *tmp;
+tmp=(struct rec*)malloc(sizeof(struct rec));
+tmp->value = str;
+tmp->next = s;
+s = tmp;
+return s;
+}
+
+struct rec *pop(struct rec *s)
+{
+if(s->next==NULL)
+{
+printf("It can't think!!!\n");
+}
+else
+{
+struct rec *node;
+node = s;
+s = s->next;
+free(node);
+}
+return s;
+}
+
+struct rec *calculate(struct rec *s,char s1)
+{
+struct rec *node;
+node = (struct rec*)malloc(sizeof(struct rec));
+node->next = NULL;
+switch(s1)
+{
+case '+' : node->value = s->value + s->next->value ; 
+break;
+case '-' : node->value = s->value - s->next->value ; 
+break; 
+case '*' : node->value = s->value * s->next->value ;
+break;
+case '/' : node->value = s->value / s->next->value ; 
+break;
+}
+
+s = pop(s);
+s = pop(s);
+node->next = s;
+s = node;
+return s;
+}
+
+int change(char s1)
+{
+{
+switch (s1)
+{
+case '0' : return 0;
+case '1' : return 1;
+case '2' : return 2;
+case '3' : return 3;
+case '4' : return 4;
+case '5' : return 5;
+case '6' : return 6;
+case '7' : return 7;
+case '8' : return 8;
+case '9' : return 9;
+}
+}
+}
+void print(struct rec *s)
+{
+if ( s->next==NULL)
+{
+printf ("It can't print value\n");
+}
+else
+{
+printf ("Output = %d\n",s->value);
+}
+}
+
+int main()
+{ char s1[10];
+int i=0,str;
+struct rec *s;
+s=create();
+printf("Input data is : ");
+gets(s1);
+
+while(s1[i]!='\0')
+{ 
+if(s1[i]>='0' && s1[i]<='9')
+{ 
+str = change(s1[i]);
+s = push(s,str);
+}
+else
+{
+s = calculate(s,s1[i]);
+}
+i++;
+}
+print(s);
+system("pause");
+}
